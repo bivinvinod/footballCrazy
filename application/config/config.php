@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://192.168.0.133/bvn/';
-// $config['base_url'] = 'https://footballcrazy.herokuapp.com/';
+// $config['base_url'] = 'http://192.168.0.133/bvn/';
+$config['base_url'] = 'https://footballcrazy.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
