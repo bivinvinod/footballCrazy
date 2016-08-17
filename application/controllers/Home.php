@@ -20,7 +20,6 @@ class Home extends Admin_Controller
         $this->load->view('footer');
     }
 
-
     public function mostPicked()
     {
         $this->load->view('header');
@@ -29,7 +28,6 @@ class Home extends Admin_Controller
         $this->load->view('most_picked');
         $this->load->view('footer');
     }
-    
 
     public function results($id)
     {
@@ -39,8 +37,12 @@ class Home extends Admin_Controller
                 "verify_peer_name" => false,
             ),
         );
-        $jsonurl    = "https://fantasy.premierleague.com/drf/leagues-classic-standings/240301?phase=1&le-page=1&ls-page=1";
-        $json       = file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
+        $jsonurl = "https://fantasy.premierleague.com/drf/leagues-classic-standings/240301?phase=1&le-page=1&ls-page=1";
+        $json    = @file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
+        if ($json === false) {
+            echo "No data";
+            return;
+        }
         $leagueData = json_decode($json);
         foreach ($leagueData->standings->results as $value) {
             $playerIds[] = $value->entry;
@@ -51,8 +53,8 @@ class Home extends Admin_Controller
 
             //stars selected by players
             foreach ($playerIds as $players) {
-                $jsonurl   = "https://fantasy.premierleague.com/drf/entry/" . $players . "/event/" . $id;
-                $json      = @file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
+                $jsonurl = "https://fantasy.premierleague.com/drf/entry/" . $players . "/event/" . $id;
+                $json    = @file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
                 if ($json === false) {
                     echo "No data";
                     return;
@@ -65,8 +67,12 @@ class Home extends Admin_Controller
 
             //stars details selected by players
 
-            $jsonurl        = "https://fantasy.premierleague.com/drf/bootstrap-static";
-            $json           = file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
+            $jsonurl = "https://fantasy.premierleague.com/drf/bootstrap-static";
+            $json    = @file_get_contents($jsonurl, false, stream_context_create($arrContextOptions));
+            if ($json === false) {
+                echo "No data";
+                return;
+            }
             $playerGameData = json_decode($json);
             foreach ($stars as $selectedStar) {
                 foreach ($playerGameData->elements as $value) {
