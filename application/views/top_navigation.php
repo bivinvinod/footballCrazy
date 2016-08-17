@@ -10,7 +10,7 @@
 
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  <img src="<?PHP echo base_url() ?>img/placeholder/user.png" alt=""><?= $this->session->userdata('name'); ?>
+                  <img src="<?PHP echo base_url() ?>img/placeholder/user.png" alt="">
                 </a>
               </li>
 
