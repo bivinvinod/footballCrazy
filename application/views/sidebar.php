@@ -25,8 +25,12 @@
         <div class="menu_section">
           <ul class="nav side-menu">
 
+          <li>
+              <a href="<?php echo site_url('home/index'); ?>"><i class="fa fa-home"></i> Home </a>
+            </li>
+
             <li>
-              <a href="<?php echo site_url('home/index'); ?>"><i class="fa fa-star"></i> Most Picked </a>
+              <a href="<?php echo site_url('home/mostPicked'); ?>"><i class="fa fa-star"></i> Most Picked </a>
             </li>
 
                    

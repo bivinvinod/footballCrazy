@@ -20,26 +20,16 @@ class Home extends Admin_Controller
         $this->load->view('footer');
     }
 
-    public function changePassword()
+
+    public function mostPicked()
     {
         $this->load->view('header');
         $this->load->view('sidebar');
         $this->load->view('top_navigation');
-        $this->load->view('change_password');
+        $this->load->view('most_picked');
         $this->load->view('footer');
-
     }
-
-    public function updatePassword()
-    {
-        $no = $this->user->checkOldPassword();
-        if ($no < 1) {
-            $this->session->set_flashdata('msg', 'Current password is wrong!');
-            redirect('home/changePassword');
-        }
-        $this->user->updatePassword();
-        redirect('home/index');
-    }
+    
 
     public function results($id)
     {
