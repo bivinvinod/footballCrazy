@@ -33,6 +33,14 @@
               <a href="<?php echo site_url('home/mostPicked'); ?>"><i class="fa fa-star"></i> Most Picked </a>
             </li>
 
+            <li>
+              <a href="<?php echo site_url('transfers/transfersIn'); ?>"><i class="fa fa-arrow-right"></i> Transfers In </a>
+            </li>
+
+            <li>
+              <a href="<?php echo site_url('transfers/transfersOut'); ?>"><i class="fa fa-arrow-left"></i> Transfers Out </a>
+            </li>
+
                    
 
           </ul>
