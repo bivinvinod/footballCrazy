@@ -10,7 +10,6 @@ class Home extends Admin_Controller
         parent::__construct();
         $this->load->database();
         $this->load->helper('url');
-        $this->load->library('session');
         $this->load->model('Leads_model', 'leads');
         $this->load->model('User_model', 'user');
     }
