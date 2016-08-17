@@ -32,6 +32,7 @@
 			gameweek = $('#gameweek').val();
 			$.get({
 				url: "<?php echo site_url('home/results') ?>/"+gameweek,
+				 dataType: "html",
 				beforeSend: function () {
 					toastr.warning("Please wait...");
 					$('#gameweek').slideUp();
