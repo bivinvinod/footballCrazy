@@ -20,19 +20,22 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="x_panel">
-		<div id="ajaxResult"></div>
+			<div id="ajaxResult"></div>
 		</div>
 
-		</div>
+	</div>
 
 
 
 	<script type="text/javascript">
 		function go() {
 			gameweek = $('#gameweek').val();
-			$.get({
+
+			$.ajax({
+				type: "POST",
 				url: "<?php echo site_url('home/results') ?>/"+gameweek,
-				 dataType: "html",
+				cache: false,
+				dataType: "html",
 				beforeSend: function () {
 					toastr.warning("Please wait...");
 					$('#gameweek').slideUp();

@@ -43,6 +43,7 @@ class Home extends Admin_Controller
 
     public function results($id)
     {
+        $CI->output->set_header();
         $arrContextOptions = array(
             "ssl" => array(
                 "verify_peer"      => false,
