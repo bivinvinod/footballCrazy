@@ -17,7 +17,7 @@ class Perfomance extends Admin_Controller
         $this->load->view('header');
         $this->load->view('sidebar');
         $this->load->view('top_navigation');
-        $this->load->view('Perfomance');
+        $this->load->view('perfomance');
         $this->load->view('footer');
     }
 
