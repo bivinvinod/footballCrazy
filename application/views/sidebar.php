@@ -41,6 +41,10 @@
               <a href="<?php echo site_url('transfers/transfersOut'); ?>"><i class="fa fa-arrow-left"></i> Transfers Out </a>
             </li>
 
+            <li>
+              <a href="<?php echo site_url('perfomance/index'); ?>"><i class="fa fa-tachometer"></i> Perfomance </a>
+            </li>
+
                    
 
           </ul>

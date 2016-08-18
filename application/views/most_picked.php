@@ -3,7 +3,7 @@
 
 	<div class="page-title">
 		<div class="title_left">
-			<h3>Most Picked</h3>
+			<h3>No of users that picked a particular player</h3>
 		</div>
 	</div>
 

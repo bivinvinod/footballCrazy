@@ -3,7 +3,7 @@
 
 	<div class="page-title">
 		<div class="title_left">
-			<h3>Players transferred in</h3>
+			<h3>User perfomance for a paticular gameweek</h3>
 		</div>
 	</div>
 
@@ -33,7 +33,7 @@
 
 			$.ajax({
 				type: "POST",
-				url: "<?php echo site_url('transfers/transfersInResult') ?>/"+gameweek,
+				url: "<?php echo site_url('Perfomance/results') ?>/"+gameweek,
 				cache: false,
 				dataType: "html",
 				beforeSend: function () {

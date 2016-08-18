@@ -3,7 +3,7 @@
 
 	<div class="page-title">
 		<div class="title_left">
-			<h3>Transfers Out</h3>
+			<h3>Players transferred out</h3>
 		</div>
 	</div>
 
