@@ -16,6 +16,7 @@
           <thead>
             <tr>
               <th>Name</th>
+              <th>Target</th>
               <th>Club</th>
               <th>Position</th>
               <th>Status</th>
@@ -23,7 +24,6 @@
               <th>Price</th>
               <th>Chngs</th>
               <th>Delta</th>
-              <th>Target</th>
             </tr>
           </thead>
           <tbody>
@@ -35,6 +35,7 @@
                   ?>
                   <tr>
                   <td><?= $value[1] ?></td>
+                    <td><?= $value[10] ?></td>
                     <td><?= $value[2] ?></td>
                     <td><?= $value[3] ?></td>
                     <td><?= $value[4] ?></td>
@@ -42,7 +43,6 @@
                     <td><?= $value[6] ?></td>
                     <td><?= $value[7] ?></td>
                     <td><?= $value[9] ?></td>
-                    <td><?= $value[10] ?></td>
                   </tr>
                   <?php } 
               } ?>
