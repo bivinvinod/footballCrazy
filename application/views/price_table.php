@@ -99,7 +99,7 @@
         "paging": true,
         "ordering": true,
         responsive: true,
-        "order": [[ 8, 'desc' ]],
+        "order": [[ 1, 'desc' ]],
         "columns": [
         { "orderable": true },
         { "orderable": true },
@@ -112,9 +112,9 @@
         { "orderable": true }
         ],
         "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-        if(aData['8'] >= 100 ) {
+        if(aData['1'] >= 100 ) {
           $(nRow).css('color', 'blue').css('font-weight', 'bold');
-        } else if(aData['8'] <= -100 ) {
+        } else if(aData['1'] <= -100 ) {
           $(nRow).css('color', 'Red').css('font-weight', 'bold');
         }
     },
