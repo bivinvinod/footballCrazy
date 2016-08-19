@@ -99,7 +99,7 @@
         "paging": true,
         "ordering": true,
         responsive: true,
-        "order": [[ 7, 'desc' ]],
+        "order": [[ 8, 'desc' ]],
         "columns": [
         { "orderable": true },
         { "orderable": true },
