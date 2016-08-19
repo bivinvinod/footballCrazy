@@ -29,9 +29,10 @@
   <!-- Dropzone -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">
   <!-- DataTable -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
   <!-- DataTable (Bootstrap) -->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.bootstrap.min.css">
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -52,7 +53,7 @@
   <!-- DataTable -->
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   <!-- DataTable (Bootstrap) -->
-  <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
   <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>

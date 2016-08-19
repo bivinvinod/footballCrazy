@@ -5,7 +5,6 @@
 		</div>
 	</div>
 
-	<div class="col-md-12">
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Info <small></small></h2>
@@ -31,7 +30,6 @@
                     
                   </div>
                 </div>
-              </div>
 
 
 </div>

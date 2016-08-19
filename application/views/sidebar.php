@@ -44,6 +44,9 @@
             <li>
               <a href="<?php echo site_url('perfomance/index'); ?>"><i class="fa fa-tachometer"></i> Perfomance </a>
             </li>
+            <li>
+              <a href="<?php echo site_url('price/index'); ?>"><i class="fa fa-dollar"></i> Price Prediction </a>
+            </li>
 
                    
 
