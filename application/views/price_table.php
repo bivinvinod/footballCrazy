@@ -98,7 +98,7 @@
       var table = $('#users-table').DataTable({
         "paging": true,
         "ordering": true,
-        responsive: true,
+        "responsive": true,
         "order": [[ 8, 'desc' ]],
         "columns": [
         { "orderable": true },

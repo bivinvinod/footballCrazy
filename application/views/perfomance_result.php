@@ -47,6 +47,7 @@
           var table = $('#users-table').DataTable({
             "paging": true,
             "ordering": true,
+            "responsive": true,
             "order": [[ 1, 'desc' ]],
             "columns": [
               { "orderable": true },
