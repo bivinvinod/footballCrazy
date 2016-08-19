@@ -16,7 +16,6 @@
           <thead>
             <tr>
               <th>Name</th>
-              <th>Target</th>
               <th>Club</th>
               <th>Position</th>
               <th>Status</th>
@@ -24,6 +23,7 @@
               <th>Price</th>
               <th>Chngs</th>
               <th>Delta</th>
+              <th>Target</th>
             </tr>
           </thead>
           <tbody>
@@ -35,7 +35,6 @@
                   ?>
                   <tr>
                   <td><?= $value[1] ?></td>
-                    <td><?= $value[10] ?></td>
                     <td><?= $value[2] ?></td>
                     <td><?= $value[3] ?></td>
                     <td><?= $value[4] ?></td>
@@ -43,6 +42,7 @@
                     <td><?= $value[6] ?></td>
                     <td><?= $value[7] ?></td>
                     <td><?= $value[9] ?></td>
+                    <td><?= $value[10] ?></td>
                   </tr>
                   <?php } 
               } ?>
@@ -99,7 +99,7 @@
         "paging": true,
         "ordering": true,
         responsive: true,
-        "order": [[ 1, 'desc' ]],
+        "order": [[ 8, 'desc' ]],
         "columns": [
         { "orderable": true },
         { "orderable": true },
@@ -112,9 +112,9 @@
         { "orderable": true }
         ],
         "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-        if(aData['1'] >= 100 ) {
+        if(aData['8'] >= 100 ) {
           $(nRow).css('color', 'blue').css('font-weight', 'bold');
-        } else if(aData['1'] <= -100 ) {
+        } else if(aData['8'] <= -100 ) {
           $(nRow).css('color', 'Red').css('font-weight', 'bold');
         }
     },
